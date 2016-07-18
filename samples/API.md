@@ -2,7 +2,7 @@
 
 - [API](#API)
   - [`<setNativeHead>`](#setNativeHead)
-  - [`<Link>`](#link)
+  - [`<showOptionMenu>`](#showOptionMenu)
   - [`<IndexLink>`](#indexlink)
   - [`withRouter`](#withRouter-component)
   - [`<RouterContext>`](#routercontext)
@@ -20,7 +20,7 @@
 	
 ## API
 
-### `<setNativeHead>`
+##### `<setNativeHead>`
 向页面添加头部导航条
 ```js
 	//////////
@@ -32,7 +32,7 @@
 	//        "title":title,  // title
 	//        "bgcolor":backgroundColor, // head 背景色
 	//        "docheight":"40", // head高度
-	//       	"hash": "demo" // 页面唯一标示，必填，作为判断页面回退的依据
+	//				"hash": "demo" // 页面唯一标示，必填，作为判断页面回退的依据
 	//          
 	// }
 	//
@@ -43,6 +43,32 @@
 	});
 ```
 
+##### `<showOptionMenu>`
+showOptionMenu展示右侧按钮
+```js
+	//////////
+	//
+	// showOptionMenu展示右侧按钮
+	//
+	// request:示例
+	// {
+	//    inner: "分享", // 按钮内容
+	//		hash: "demo", // 页面唯一标示
+	//		success: function() { // 回调
+	//			alert("分享");
+	//		}
+	//		
+	// }
+	//
+	//////////
+	Hybridui.showOptionMenu({
+		inner: "分享",
+		hash: "Demo",
+		success: function() {
+			alert("分享");
+		}
+	});
+```
 #### Props
 ##### `children` (required)
 One or many [`<Route>`](#route)s or [`PlainRoute`](#plainroute)s. When the history changes, `<Router>` will match a branch of its routes, and render their configured [components](#routecomponent), with child route components nested inside the parents.

@@ -78,7 +78,7 @@ if(!window.browser) {
 
 		//////////
 		//
-		// showOptionMenu展示导航菜单
+		// showOptionMenu展示右侧按钮
 		//
 		// request:示例
 		// {
