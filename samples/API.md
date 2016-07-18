@@ -1,8 +1,8 @@
 # API 文档
 
 - [API](#API)
-  - [`<setNativeHead>`](###setNativeHead)
-  - [`<showOptionMenu>`](###showOptionMenu)
+  - [`<setNativeHead>`](#SetNativeHead)
+  - [`<showOptionMenu>`](#showOptionMenu)
   - [`<IndexLink>`](#indexlink)
   - [`withRouter`](#withRouter-component)
   - [`<RouterContext>`](#routercontext)
@@ -20,7 +20,7 @@
 	
 ## API
 
-##### `<setNativeHead>`
+##### `<SetNativeHead>`
 向页面添加头部导航条
 ```js
 	//////////
