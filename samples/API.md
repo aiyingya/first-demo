@@ -21,9 +21,26 @@
 ## API
 
 ### `<setNativeHead>`
-设置头部API
+向页面添加头部导航条
 ```js
-
+	//////////
+	//
+	// addNativeHead 向页面添加头部导航条.
+	//
+	// request:示例
+	// {
+	//        "title":title,  // title
+	//        "bgcolor":backgroundColor, // head 背景色
+	//        "docheight":"40", // head高度
+	//       	"hash": "demo" // 页面唯一标示，必填，作为判断页面回退的依据
+	//          
+	// }
+	//
+	//////////
+	Hybridui.setNativeHead({
+		"title": "setNativeHead",
+		"hash": "Demo"
+	});
 ```
 
 #### Props
