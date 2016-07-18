@@ -11,12 +11,13 @@
 ## 调用方式  
 	npm install ymc-hybridui
 	
-	CMD调用方式
+### `CMD调用方式`	
+	
 	```js
 	Hybridui = request('ymc-hybridui')
 
 	```
-	内联方式
+### `内联调用`	
 	```js
 	<script src="../dist/js/ymc.hybridui.js"></script>
 
