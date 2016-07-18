@@ -1,18 +1,33 @@
-# API Reference
+# API 文档
 
-- [Components](#components)
+- [API](#API)
   - [`<setNativeHead>`](#setNativeHead)
   - [`<Link>`](#link)
   - [`<IndexLink>`](#indexlink)
   - [`withRouter`](#withRouter-component)
   - [`<RouterContext>`](#routercontext)
     - [`context.router`](#contextrouter)
-  
+		
+## 调用方式  
+	npm install ymc-hybridui
+	
+	CMD调用方式
+	```js
+	Hybridui = request('ymc-hybridui')
 
-## Components
+	```
+	内联方式
+	```js
+	<script src="../dist/js/ymc.hybridui.js"></script>
 
-### `<Router>`
-Primary component of React Router. It keeps your UI and the URL in sync.
+	```
+## API
+
+### `<setNativeHead>`
+设置头部API
+```js
+
+```
 
 #### Props
 ##### `children` (required)
