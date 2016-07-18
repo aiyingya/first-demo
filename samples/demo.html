@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>Demo</title>
+	<link rel="stylesheet" href="../dist/css/hybridui.css">
+	<style>
+		.views {
+			overflow: hidden;
+		}
+		.demo-main {
+			margin: 15px;
+		}
+		.demo-main .weui_btn {
+			margin-bottom: 15px;
+			line-height: 2.3333333;
+			font-size: 1.4rem;
+		}
+		.weui_btn:after {
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="views">
+		<div class="demo-main">
+			<a href="javascript:;" onclick="setNativeHead()" class="weui_btn weui_btn_warn">setNativeHead</a>
+			<a href="javascript:;" onclick="showOptionMenu()" class="weui_btn weui_btn_warn">showOptionMenu</a>
+			<a href="javascript:;" onclick="hideOptionMenu()" class="weui_btn weui_btn_warn">hideOptionMenu</a>
+			<a href="javascript:;" onclick="openNewPage()" class="weui_btn weui_btn_warn">openNewPage</a>
+			<a href="javascript:;" class="weui_btn weui_btn_warn">goBackToPage</a>
+			<a href="javascript:;" onclick="showToast()" class="weui_btn weui_btn_warn">showToast</a>
+			<a href="javascript:;" onclick="showDialog()" class="weui_btn weui_btn_warn">showDialog</a>
+			<a href="javascript:;" onclick="showLoadingView()" class="weui_btn weui_btn_warn">showLoadingView</a>
+			<a href="javascript:;" onclick="hideLoadingView()" class="weui_btn weui_btn_warn">hideLoadingView</a>
+		</div>
+	</div>
+	<script src="../lib/jquery-3.0.0.min.js"></script>
+	<script src="../dist/js/ymc.hybridui.js"></script>
+	<script>
+		(function() {
+			console.log(Hybridui);
+			console.log(window.Plugins);
+			Hybridui.setNativeHead({
+				"title": 'Demo',  // title
+				"hash": "Demo"
+			});
+		}());
+		
+		function setNativeHead() {
+			console.log(1);
+			Hybridui.setNativeHead({
+				"title": "setNativeHead",
+				"hash": "Demo"
+			});
+		}
+		
+		function showOptionMenu() {
+			console.log(2);
+			Hybridui.showOptionMenu({
+				inner: "分享",
+				hash: "Demo",
+				success: function() {
+					alert("分享");
+				}
+			});
+		}
+		
+		function hideOptionMenu() {
+			console.log(3);
+			Hybridui.hideOptionMenu();
+		}
+		
+		function openNewPage() {
+			console.log(4);
+			Hybridui.openNewPage({
+				title: "openPage",
+				linkUrl: "openPage.html",
+				showTitle: "0",
+				hash: "openPage"
+			});
+		}
+		
+		function showToast() {
+			console.log(5);
+			Hybridui.showToast({
+				"msg": "showToast"
+			});
+		}
+		
+		function showDialog() {
+			console.log(6);
+			Hybridui.showDialog({
+				"title": "showDialog",
+				"msg": "你是否还会牵挂我 我最亲爱的朋友啊 当我决定放下所有 走上去自由的路 你是否还会陪着我 你是否还会陪着我 我最思念的亲人啊 ",
+				"button1": "去支付",
+				"button1action": function() {
+					alert('131');
+				}
+			});
+		}
+		
+		function showLoadingView() {
+			console.log(7);
+			Hybridui.showLoadingView({
+				"msg": "数据加载中"
+			});
+		}
+		
+	</script>
+	
+</body>
+</html>
