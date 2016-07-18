@@ -1,8 +1,8 @@
 # API 文档
 
 - [API](#API)
-  - [`<setNativeHead>`](#setNativeHead)
-  - [`<showOptionMenu>`](#showOptionMenu)
+  - [`<setNativeHead>`](###setNativeHead)
+  - [`<showOptionMenu>`](###showOptionMenu)
   - [`<IndexLink>`](#indexlink)
   - [`withRouter`](#withRouter-component)
   - [`<RouterContext>`](#routercontext)
