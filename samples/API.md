@@ -2,7 +2,7 @@
 
 - [API](#API)
   - [`<setNativeHead>`](#SetNativeHead)
-  - [`<showOptionMenu>`](#showOptionMenu)
+  - [`<showOptionMenu>`](#ShowOptionMenu)
   - [`<IndexLink>`](#indexlink)
   - [`withRouter`](#withRouter-component)
   - [`<RouterContext>`](#routercontext)
@@ -20,7 +20,7 @@
 	
 ## API
 
-##### `<SetNativeHead>`
+### `<SetNativeHead>`
 向页面添加头部导航条
 ```js
 	//////////
@@ -43,7 +43,7 @@
 	});
 ```
 
-##### `<showOptionMenu>`
+### `<ShowOptionMenu>`
 showOptionMenu展示右侧按钮
 ```js
 	//////////
