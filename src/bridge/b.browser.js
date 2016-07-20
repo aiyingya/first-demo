@@ -191,7 +191,7 @@ if(!window.browser) {
 		
 		//////////
     //
-    // showAlert显示警告弹窗
+    // showDialog显示警告弹窗
     //
     // request:示例
     // {
