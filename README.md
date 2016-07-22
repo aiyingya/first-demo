@@ -14,7 +14,7 @@
 	npm install ymc-hybridui
 	
 	
-	CMD调用方式
+	AMD调用方式
 	Hybridui = request('ymc-hybridui')
 	
 	内联调用
