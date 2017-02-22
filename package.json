@@ -1,16 +1,21 @@
 {
-  "name": "ymc-hybridui",
-  "version": "1.2.1",
+  "name": "vue-jsbridge",
+  "version": "1.3.29",
   "description": {},
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/PickPanda/ymc-hybridui.git",
+  "homepage": "https://github.com/PickPanda/vue-jsbridge.git",
   "keywords": [
     "hybrid",
-    "ui"
+    "ui",
+    "jsbridge"
   ],
+  "filter": {
+    "access": "$all",
+    "publish": "$authenticated"
+  },
   "maintainers": [
     {
       "email": "pandazoer@163.com",
@@ -20,6 +25,6 @@
   "author": "Lipan",
   "license": "MIT",
   "dependencies": {
-    
+    "gulp": "^3.9.1"
   }
 }
